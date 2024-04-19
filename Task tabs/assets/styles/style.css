@@ -1,0 +1,113 @@
+/* BEGIN (write your solution here) */
+
+@font-face {
+    font-family: "Raleway-Bold";
+    src: url("../assets/fonts/Raleway-Bold.ttf");
+  }
+   @font-face {
+    font-family: "Raleway-Regular";
+    src: url("../assets/fonts/Raleway-Regular.ttf");
+  }
+  
+  /* END */
+  
+  body {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 50px;
+  
+    color: #eee;
+  
+    /* BEGIN (write your solution here) */
+    
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: "Raleway-Regular", sans-serif;
+  
+    /* END */
+  
+    background-image: linear-gradient(to right top, #222831, #282d36, #2d333b, #333841, #393e46);
+  }
+  
+  img {
+    max-width: 100%;
+  
+    vertical-align: middle;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+  
+  h2 {
+    color: #00adb5;
+    font-size: 1.5em;
+  }
+  
+  .tabs {
+    width: 1024px;
+    margin: 0 auto;
+  
+    /* BEGIN (write your solution here) */
+  
+    columns: 3;
+    column-gap: 0;
+    break-inside: avoid;
+    border: 2px solid white;
+    /* END */
+  }
+  
+  /* BEGIN (write your solution here) */
+  
+  
+  
+  .tab-name {
+    display: block;
+    box-sizing: border-box; 
+    padding: 20px;
+    text-align: center;
+    background-color: #00adb5;
+    /* border: 1px solid red; */
+  } 
+
+  .tab-name:hover {
+    border-bottom: 3px solid #5ffbf1;
+  }
+  
+  .tabs-content {
+    width: 100%;
+    background-color: #393e46;
+    /* border: 5px solid yellow; */
+    column-span: all;
+  }
+  
+  
+  .tabs-content-item {
+    display: none;
+    /* border: 3px solid green; */
+    columns: 3;
+    column-gap: 30px;
+  }
+  
+  
+  [data-tab="html"]:hover ~ .tabs-content > [data-tab-content="html"], 
+  [data-tab="css"]:hover ~ .tabs-content > [data-tab-content="css"],
+  [data-tab="js"]:hover ~ .tabs-content > [data-tab-content="js"] {
+    
+    display: block;
+  
+  }
+  
+  
+  /* END */
+  
+  .span-all {
+    column-span: all;
+  }
